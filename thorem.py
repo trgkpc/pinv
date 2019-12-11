@@ -44,10 +44,8 @@ for i in range(n):
     error = LA.norm(Apinv_fromB - Apinv) / LA.norm(Apinv)
 
     if error < 1e-10:
-        print("num",i,"same")
         same_num += 1
     else:
-        print("wa")
         wa.append([Apinv, Apinv_fromB])
 
 print("[[fin]]")
